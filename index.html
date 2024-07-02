@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="javacript/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <script defer src="javacript/weather.js"></script>
+</head>
+<body>
+    <div class="clouds">
+        <div class="cloud"></div>
+        <div class="cloud"></div>
+    </div>
+    <div class="container">
+        <h1>Weather App</h1>
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Enter city name">
+            <button id="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+        <div class="weather-info" id="weather-info">
+            <h2 id="city-name"><i class="fa-solid fa-street-view"></i></h2>
+            <div id="icon-container">
+                <i id="sun-icon" class="fas fa-sun" style="display: none;"></i>
+                <i id="cloud-icon" class="fas fa-cloud" style="display: none;"></i>
+                <i id="rain-icon" class="fas fa-cloud-rain" style="display: none;"></i>
+            </div>
+            <p id="weather-description"></p>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+        </div>
+    </div>
+</body>
+</html>
